@@ -48,7 +48,7 @@ export default function PiercingGlossary() {
             loading="lazy"
             sizes="(min-width: 1440px) 670px,
               (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-            fetchpriority="auto"
+            fetchPriority="auto"
           />
         </div>
       </div>

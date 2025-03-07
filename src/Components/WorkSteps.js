@@ -31,7 +31,7 @@ export default function WorkSteps() {
         <div className="mid_container">
           <div className="image-content">
           <img src="//www.imaginjewels.com/cdn/shop/files/Untitled_design_24_6db21056-635a-43e6-9bd2-af16604d8ca8.png?v=1706101400&amp;width=1500" alt="" srcSet="//www.imaginjewels.com/cdn/shop/files/Untitled_design_24_6db21056-635a-43e6-9bd2-af16604d8ca8.png?v=1706101400&amp;width=165 165w, //www.imaginjewels.com/cdn/shop/files/Untitled_design_24_6db21056-635a-43e6-9bd2-af16604d8ca8.png?v=1706101400&amp;width=360 360w, //www.imaginjewels.com/cdn/shop/files/Untitled_design_24_6db21056-635a-43e6-9bd2-af16604d8ca8.png?v=1706101400&amp;width=535 535w, //www.imaginjewels.com/cdn/shop/files/Untitled_design_24_6db21056-635a-43e6-9bd2-af16604d8ca8.png?v=1706101400&amp;width=750 750w, //www.imaginjewels.com/cdn/shop/files/Untitled_design_24_6db21056-635a-43e6-9bd2-af16604d8ca8.png?v=1706101400&amp;width=1070 1070w, //www.imaginjewels.com/cdn/shop/files/Untitled_design_24_6db21056-635a-43e6-9bd2-af16604d8ca8.png?v=1706101400&amp;width=1500 1500w" width="1500" height="1500" loading="lazy" sizes="(min-width: 1440px) 670px,
-              (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" fetchpriority="auto"/>
+              (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" fetchPriority="auto"/>
           </div>
           <div className="steps-section">
             {steps.map((step, index) => (
