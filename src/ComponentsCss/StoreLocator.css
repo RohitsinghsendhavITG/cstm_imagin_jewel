@@ -1,0 +1,54 @@
+
+  .custom_store_locator {
+    padding-top: 40px;
+    padding-bottom: 52px;
+  }
+  .custom_store_locator .store_locator_nav_wrapper {
+    text-align: center;
+  }
+  .custom_store_locator .store_locator_nav_wrapper ul {
+    display: flex; 
+    align-items: center;
+    gap:30px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    white-space: nowrap;
+  }
+  .custom_store_locator .store_locator_nav_wrapper li.locator_nav {
+    list-style: none;
+  }
+  .custom_store_locator .store_locator_nav_wrapper .store_locator_nav_inner {
+    margin-top: 0;
+    overflow-x: auto;
+    padding-bottom: 15px;
+  }
+
+  .custom_store_locator .button {
+    min-height: 30px;
+    font-size: 16.5px;
+    line-height: normal;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 30px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid #000;
+  }
+  .custom_store_locator .button--primary{
+    color: #fff;
+    background: #000;
+  }
+  .custom_store_locator .store_locator_nav_inner::-webkit-scrollbar {
+    height: 10px;
+    background-color: #E0E0E0;
+    border-radius: 5px;
+  }
+  .custom_store_locator .store_locator_nav_inner::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border: 5px solid #000;
+    border-radius: 5px;
+  }

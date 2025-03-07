@@ -1,0 +1,132 @@
+.custom_career_section .careers-header {
+  background-color: #e7d7c8;
+  padding: 60px 50px;
+  text-align: left;
+}
+
+.custom_career_section .careers-header h2 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.custom_career_section .careers-header p {
+  font-size: 16px;
+  margin-top: 15px;
+  letter-spacing: 0.5px;
+  line-height: 26px;
+}
+
+/* Stats Section */
+
+.custom_career_section .stats-section {
+  text-align: center;
+  padding: 80px 0;
+  background-color: #f1efeb;
+}
+
+.custom_career_section .stats-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 17px;
+}
+
+.custom_career_section .stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.custom_career_section .stat-box {
+  text-align: center;
+  width: calc(25% - 20px * 3 / 4);
+  border: 1px solid;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.custom_career_section .stat-box h5 {
+  font-size: 22px;
+  line-height: normal;
+}
+
+/* Open Positions */
+.custom_career_section .open-positions {
+  background-color: #e7d7c8;
+  padding: 60px 50px;
+}
+
+.custom_career_section .open-positions h2 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.custom_career_section .open-positions ul {
+  padding-left: 40px;
+  margin-top: 15px;
+}
+
+.custom_career_section .open-positions li {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.custom_career_section .open-positions a {
+  color: black;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  font-size: 16px;
+}
+
+.custom_career_section .open-positions a:hover {
+  text-decoration: underline;
+}
+
+.custom_career_section .stats-container .stat-box .box-content {
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 749px) {
+  .custom_career_section .careers-header,
+  .custom_career_section .open-positions {
+    padding: 30px 20px;
+  }
+
+  .custom_career_section .stat-box {
+    width: calc(50% - 20px * 1 / 2);
+  }
+
+  .custom_career_section .stats-container {
+    row-gap: 12px;
+  }
+
+  .custom_career_section .stats-section {
+    padding: 40px 0;
+  }
+
+  .custom_career_section .stats-section-inner {
+    padding: 30px 0;
+  }
+
+  .custom_career_section .careers-header h2,
+  .custom_career_section .stats-section h2,
+  .custom_career_section .open-positions h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .custom_career_section .stats-container {
+    column-gap: 12px;
+    flex-flow: column;
+  }
+  .custom_career_section .stat-box {
+    width: 100%;
+  }
+}

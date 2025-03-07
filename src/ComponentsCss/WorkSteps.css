@@ -1,0 +1,82 @@
+
+.work_step_section .image_with_text_container .mid_container {
+    gap: 60px;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+}
+.work_step_section .heading {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.work_step_section .steps-section {
+  text-align: left;
+  flex: 1;
+}
+
+.work_step_section .step {
+  display: grid;
+  margin-bottom: 48px;
+  grid-template-columns: auto 1fr;
+}
+
+.work_step_section .step-number {
+  border-radius: 50%;
+  margin-right: 15px;
+  color: #8abf92;
+  border: 1px solid #8abf92;
+  font-weight: 800;
+  font-size: 21px;
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+.work_step_section .step-number:after {
+  position: absolute;
+  bottom: 0;
+  top: 70px;
+  left: 58%;
+  transform: translate(-50%);
+  height: 68px;
+  width: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: " ";
+  background-image: url("../Assets/Images/WorkStepsImages/afterImage.webp");
+}
+
+.work_step_section .step-content h3 {
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.work_step_section .button-container {
+  margin-top: 30px;
+  text-align: center;
+}
+.work_step_section .button--primary {
+  box-shadow: 0px 0px 5px #000;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1099px) {
+    .work_step_section .image_with_text_container .mid_container {
+        gap: 40px;
+    }
+    .work_step_section .step-number {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .work_step_section .step-number:after {
+        top: 50px;
+    }
+}
+@media screen and (max-width: 749px) {
+    .work_step_section .image_with_text_container .mid_container {
+        grid-template-columns:  1fr;
+    }
+}

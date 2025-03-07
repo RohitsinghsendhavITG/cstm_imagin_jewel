@@ -1,0 +1,43 @@
+.piercing_glossary_section {
+  background: #fff;
+}
+
+.piercing_glossary_section .piercing_glossary_section_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.piercing_glossary_section .glossary_text {
+  max-width: 411px;
+  padding: 6rem 7rem 7rem 0;
+}
+.piercing_glossary_section .image-content {
+  max-width: 911px;
+  border: 1px solid #0000000d;
+}
+.piercing_glossary_section .glossary_text p {
+  margin-bottom: 10px;
+}
+.piercing_glossary_section .glossary_text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.piercing_glossary_section .glossary_text li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 26px;
+}
+.piercing_glossary_section .glossary_text button.button {
+  margin-top: 30px;
+}
+/* Responsive Design */
+@media (max-width: 749px) {
+  .piercing_glossary_section .piercing_glossary_section_wrapper {
+    grid-template-columns: 1fr;
+  }
+  .piercing_glossary_section .glossary_text {
+    padding: 0;
+    order: 2;
+  }
+}
