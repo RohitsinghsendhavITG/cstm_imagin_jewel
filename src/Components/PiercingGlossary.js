@@ -15,7 +15,7 @@ export default function PiercingGlossary() {
   ];
 
   return (
-    <div className="piercing_glossary_section section_padding">
+    <div className="piercing_glossary_section section_padding" id="piercing-glossary">
       <div className="piercing_glossary_section_wrapper page-width">
         <div className="glossary_text">
           <h2 className="heading">PIERCING GLOSSARY</h2>

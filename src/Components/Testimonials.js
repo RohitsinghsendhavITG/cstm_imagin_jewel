@@ -38,7 +38,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <div className="testimonials_section section_padding">
+    <div className="testimonials_section section_padding" id="reviews">
       <div className="testimonials_section_wrapper page-width">
         <h4>TESTIMONIALS</h4>
         <h2>WHAT DO OUR CUSTOMERS THINK?</h2>

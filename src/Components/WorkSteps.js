@@ -23,7 +23,7 @@ export default function WorkSteps() {
   ];
 
   return (
-    <div className="work_step_section section_padding">
+    <div className="work_step_section section_padding" id="how-does-it-work">
       <div className="work_step_section_wrapper page-width">
         <p className="sub_heading">GETTING PIERCED IN OUR STUDIOS</p>
         <h2 className="heading">HOW DOES IT WORK?</h2>
