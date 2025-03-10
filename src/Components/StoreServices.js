@@ -86,89 +86,106 @@ export default function StoreServices() {
   return (
     <>
       <div className="custom_store_services section_padding">
-      <div className="custom_store_services_wrapper page-width">
-        <div className="store_locator_nav_wrapper">
-          <div className="store_locator_nav_inner">
-            <div className="store-locations">
-              {storeLocations.map((location) => (
-                <a
-                  key={location.id}
-                  href={`#${location.id}`}
-                  className="store_location_btn"
+        <div className="custom_store_services_wrapper page-width">
+          <div className="cstm_rich_text">
+            <div className="store-intro-rich-text">
+              <p>
+                We're excited to welcome you in our stores!
+                <br />
+                Come by to discover the latest collections, get pierced or get
+                styling advice.
+                <br />
+                See you soon?
+              </p>
+            </div>
+          </div>
+
+          <div className="store_locator_nav_wrapper">
+            <div className="store_locator_nav_inner">
+              <div className="store-locations">
+                {storeLocations.map((location) => (
+                  <a
+                    key={location.id}
+                    href={`#${location.id}`}
+                    className="store_location_btn"
+                  >
+                    {location.name}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="services-container icon_with_text">
+            <div className="icon_with_text_content">
+              <div className="service-box">
+                <img src={free_gift_packaging_logo} alt="Gift" />
+                <h3>FREE GIFT PACKAGING</h3>
+              </div>
+              <div className="service-box">
+                <img src={free_engraving_logo} alt="Engraving" />
+                <h3>FREE ENGRAVING IN ALL OUR STORES</h3>
+              </div>
+              <div className="service-box">
+                <img src={get_pierced_logo} alt="Piercing" />
+                <h3>GET PIERCED IN ALL OUR STORES</h3>
+                <p>
+                  Book your appointment <Link to="/appointment">here</Link>.
+                  <br />
+                  Walk-ins are welcome!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="image_with_details_wrapper">
+            <div className="image_with_details_main">
+              {storeDetails.map((store) => (
+                <div
+                  key={store.id}
+                  className="image_with_details"
+                  id={store.id}
                 >
-                  {location.name}
-                </a>
+                  <div className="block_image">
+                    <img src={store.imgSrc} alt="" />
+                  </div>
+                  <div className="block_content">
+                    <h3 className="image_with_details_inline">{store.name}</h3>
+                    <p className="announce_text">
+                      <em>{store.announce}</em>
+                    </p>
+                    <div className="block_deatils">
+                      <div className="left_side_content">
+                        {store.address.map((line, idx) => (
+                          <p key={idx}>{line}</p>
+                        ))}
+                        <p>
+                          <strong>{store.phone}</strong>
+                        </p>
+                      </div>
+                      <div className="right_side_content">
+                        <p>
+                          <strong>OPENING HOURS</strong>
+                        </p>
+                        {store.timing.extra && (
+                          <p className="extra">{store.timing.extra}</p>
+                        )}
+                        <p className="day">{store.timing.day}</p>
+                        <p className="time">{store.timing.time}</p>
+                        {store.timing.off_day && (
+                          <p>
+                            <em className="off_day">{store.timing.off_day}</em>
+                          </p>
+                        )}
+                      </div>
+                    </div>
+                    <a href="#" className="block_content_btn">
+                      VIEW STORE
+                    </a>
+                  </div>
+                </div>
               ))}
             </div>
           </div>
         </div>
-        <div className="services-container icon_with_text">
-          <div className="icon_with_text_content">
-            <div className="service-box">
-              <img src={free_gift_packaging_logo} alt="Gift" />
-              <h3>FREE GIFT PACKAGING</h3>
-            </div>
-            <div className="service-box">
-              <img src={free_engraving_logo} alt="Engraving" />
-              <h3>FREE ENGRAVING IN ALL OUR STORES</h3>
-            </div>
-            <div className="service-box">
-              <img src={get_pierced_logo} alt="Piercing" />
-              <h3>GET PIERCED IN ALL OUR STORES</h3>
-              <p>
-                Book your appointment <Link to="/appointment">here</Link>.
-                <br />
-                Walk-ins are welcome!
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="image_with_details_wrapper">
-          <div className="image_with_details_main">
-            {storeDetails.map((store) => (
-              <div key={store.id} className="image_with_details" id={store.id}>
-                <div className="block_image">
-                  <img src={store.imgSrc} alt="" />
-                </div>
-                <div className="block_content">
-                  <h3 className="image_with_details_inline">{store.name}</h3>
-                  <p className="announce_text">
-                    <em>{store.announce}</em>
-                  </p>
-                  <div className="block_deatils">
-                    <div className="left_side_content">
-                      {store.address.map((line, idx) => (
-                        <p key={idx}>{line}</p>
-                      ))}
-                      <p>
-                        <strong>{store.phone}</strong>
-                      </p>
-                    </div>
-                    <div className="right_side_content">
-                      <p>
-                        <strong>OPENING HOURS</strong>
-                      </p>
-                      {store.timing.extra && (
-                        <p className="extra">{store.timing.extra}</p>
-                      )}
-                      <p className="day">{store.timing.day}</p>
-                      <p className="time">{store.timing.time}</p>
-                      {store.timing.off_day && (
-                        <p>
-                          <em className="off_day">{store.timing.off_day}</em>
-                        </p>
-                      )}
-                    </div>
-                  </div>
-                  <a href="#" className="block_content_btn">
-                    VIEW STORE
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
       </div>
     </>
   );
